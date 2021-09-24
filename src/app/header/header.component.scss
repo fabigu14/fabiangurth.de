@@ -63,6 +63,10 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .arrow {
