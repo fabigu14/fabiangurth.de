@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 :root{
@@ -8,4 +9,16 @@ body {
     --secondary-color: #2dfcd8;
     --bg-black: #000000;
     --bg-gray: #1a1a1a;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-size: 18px;
 }
