@@ -5,26 +5,35 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
 
-  buttons= [
+  buttons = [
     {
-    "name": "all",
-    "isActive": true
-  },
+      "name": "all",
+      "isActive": true
+    },
     {
-    "name": "angular",
-    "isActive": false
-  },
+      "name": "angular",
+      "isActive": false
+    },
     {
-    "name": "js",
-    "isActive": false
+      "name": "js",
+      "isActive": false
+    }
+  ];
+
+  filterProjects(type: string) {
+    this.setActiveButton(type);
   }
-];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  setActiveButton(type: string) {
+    this.buttons.forEach(button => {
+      if(button['name'] == type){
+        button['isActive'] = true;
+      }
+      else{
+        button['isActive'] = false;
+      }
+    });
   }
-
 }

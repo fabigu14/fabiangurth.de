@@ -1,9 +1,9 @@
 <div class="project-section">
     <h2>My work</h2>
     <div class="prjct-selection">
-        <button>All</button>
-        <button>Angular</button>
-        <button>Java Script</button>
+        <button [class.btn-active]="buttons[0]['isActive']" (click)="filterProjects('all')">All</button>
+        <button [class.btn-active]="buttons[1]['isActive']" (click)="filterProjects('angular')">Angular</button>
+        <button [class.btn-active]="buttons[2]['isActive']" (click)="filterProjects('js')">Java Script</button>
     </div>
     <div class="projects">
         <img src="assets/img/coding.jpg" alt="img">
