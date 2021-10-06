@@ -1,0 +1,18 @@
+.footer {
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+
+    a {
+        text-decoration: none;
+        color: #54556775;
+    }
+
+    img {
+        height: 55px;
+        margin-left: 60px;
+    }
+}

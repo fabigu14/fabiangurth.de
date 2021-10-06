@@ -9,13 +9,13 @@
 .prjct-selection {
     margin-top: 40px;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 7px;
     grid-template-columns: auto auto auto;
     button {
-        height: 50px;
-        width: 120px;
+        height: 70px;
+        width: 135px;
         color: white;
-        border: 1px solid var(--primary-color);
+        border: 2px solid var(--primary-color);
         background-color: var(--bg-black);
         &:hover {
             cursor: pointer;
