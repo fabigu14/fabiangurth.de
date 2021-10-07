@@ -33,9 +33,57 @@
     display: grid;
     grid-gap: 35px;
     grid-template-columns: auto auto;
+}
+
+.project {
+    background-color: white;
+    position: relative;
+    height: 350px;
+    width: 400px;
     img {
-        height: 350px;
-        width: 400px;
         object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover img {
+        opacity: 0.3;
+    }
+    &:hover .overlay {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    h3 {
+        margin: 0 0 8px 0;
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: 600;
+    }
+    span {
+        color: black;
+    }
+    button {
+        margin-top: 32px;
+        padding: 10px 20px;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        background-color: white;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
