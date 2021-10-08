@@ -21,7 +21,8 @@
 }
 
 button {
-    padding: 20px 90px;
+    height: 60px;
+    width: 260px;
     font-size: 15px;
     color: var(--secondary-color);
     background-color: var(--bg-black);
@@ -48,7 +49,7 @@ button {
     border-radius: 100%;
 }
 
-.arrow-center{
+.arrow-center {
     display: flex;
     justify-content: center;
 }
@@ -62,7 +63,7 @@ button {
     display: flex;
     justify-content: center;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -79,4 +80,38 @@ button {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+@media(max-width: 1024px) {
+
+    .header{
+        padding: 180px 40px 100px 40px;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profil-img{
+        height: 375px;
+    }
+
+    .arrow-center{
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+    .intro{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profil-img{
+        height: 375px;
+    }
+
+    .arrow-center{
+        display: none;
+    }
 }

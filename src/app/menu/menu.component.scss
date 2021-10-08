@@ -11,13 +11,27 @@
         color: white;
         text-decoration: none;
         font-weight: 500;
-        margin-right: 32px;
+        margin-left: 32px;
         &:hover {
             color: var(--primary-color);
         }
     }
 
-    img{
+    .logo{
         height: 65px;
+    }
+
+    .burger-menu{
+        height: 40px;
+    }
+}
+
+@media(max-width: 900px) {
+    .menu{
+        padding: 30px 40px;
+
+        a{
+            display: none;
+        }
     }
 }

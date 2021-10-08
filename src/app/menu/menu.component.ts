@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  mobile = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    if (document.body.clientWidth <= 900) { 
+      this.mobile = true;
+    }
+    console.log(this.mobile);
+    
   }
 
 }
