@@ -123,3 +123,17 @@
         width: 300px;
     }
 }
+
+@media (max-width: 350px) {
+    .prjct-selection {
+        button {
+            height: 55px;
+            width: 90px;
+        }
+    }
+
+    .project {
+        height: 230px;
+        width: 280px;
+    }
+}
