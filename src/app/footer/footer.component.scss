@@ -16,3 +16,15 @@
         margin-left: 60px;
     }
 }
+
+@media(max-width: 600px){
+    .footer{
+        padding: 40px 60px;
+        flex-direction: column-reverse;
+       
+        img {
+            height: 55px;
+            margin: 0 10px 20px;
+        }
+    }
+}

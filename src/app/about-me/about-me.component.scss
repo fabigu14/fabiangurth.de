@@ -73,18 +73,41 @@
     .info-section {
         grid-template-columns: auto auto;
     }
+
+    .about {
+        background-color: var(--bg-black);
+    }
 }
 
 @media (max-width: 900px) {
     .intro {
         flex-direction: column;
-        // margin-bottom: 0;
     }
     .intro-text {
         margin-left: 0;
     }
 
-    .hiphen{
+    .hiphen {
         display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .info-section {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro-text {
+        text-align: center;
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .intro-text {
+        text-align: center;
+        width: 300px;
     }
 }
