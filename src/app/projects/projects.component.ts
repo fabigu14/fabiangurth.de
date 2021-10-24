@@ -14,16 +14,37 @@ export class ProjectsComponent {
     },
     {
       "name": "angular",
-      "isActive": false
+      "isActive": false,
     },
     {
       "name": "js",
-      "isActive": false
+      "isActive": false,
+    }
+  ];
+
+  projects = [
+    {
+      "type": "angular",
+      "isActive": true,
+    },
+    {
+      "type": "js",
+      "isActive": true,
     }
   ];
 
   filterProjects(type: string) {
     this.setActiveButton(type);
+    for (let i = 0; i < this.projects.length; i++) {
+      const project = this.projects[i];
+      if (this.buttons[i + 1]['isActive'] || this.buttons[0]['isActive']) {
+        project.isActive =  true;
+      }
+      else{
+        project.isActive = false;
+      }
+      
+    }
   }
 
   setActiveButton(type: string) {
