@@ -1,11 +1,13 @@
 <div class="project-section">
     <h2>My work</h2>
     <div class="prjct-selection">
-        <button [class.btn-active]="buttons[0]['isActive']" (click)="filterProjects('all')">All</button>
-        <button [class.btn-active]="buttons[1]['isActive']" (click)="filterProjects('angular')">Angular</button>
-        <button [class.btn-active]="buttons[2]['isActive']" (click)="filterProjects('js')">Java Script</button>
+        
+        <button data-filter="all" [class.btn-active]="buttons[0]['isActive']" (click)="filterProjects('all')">All</button>
+        <button data-filter="angular" [class.btn-active]="buttons[1]['isActive']" (click)="filterProjects('angular')">Angular</button>
+        <button data-filter="js" [class.btn-active]="buttons[2]['isActive']" (click)="filterProjects('js')">Java Script</button>
     </div>
-    <div class="projects"  [class.remove-gap]="buttons[1]['isActive']">
+    <div class="projects" [class.remove-gap]="buttons[1]['isActive']">
+        
         <div *ngIf="projects[1].isActive" class="project">
             <img src="assets/img/el_pollo_loco.png" alt="img">
             <div class="overlay">
@@ -38,7 +40,6 @@
                 <button>Try out</button>
             </div>
         </div>
-
-
+    
     </div>
 </div>

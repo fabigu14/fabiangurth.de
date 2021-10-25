@@ -17,21 +17,24 @@
             cursor: pointer;
         }
     }
+}
 
-    .logo{
-        height: 65px;
-    }
+.logo {
+    height: 65px;
+}
 
-    .burger-menu{
-        height: 40px;
+.burger-menu{
+    height: 40px;
+    &:hover{
+        cursor: pointer;
     }
 }
 
-@media(max-width: 900px) {
-    .menu{
+@media (max-width: 900px) {
+    .menu {
         padding: 30px 40px;
 
-        a{
+        a {
             display: none;
         }
     }

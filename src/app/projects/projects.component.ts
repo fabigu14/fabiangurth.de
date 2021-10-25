@@ -22,16 +22,17 @@ export class ProjectsComponent {
     }
   ];
 
-  projects = [
-    {
-      "type": "angular",
-      "isActive": true,
-    },
-    {
-      "type": "js",
-      "isActive": true,
-    }
-  ];
+ projects = [
+   {
+     "type": "angular",
+     "isActive": true,
+   },
+   {
+     "type": "js",
+     "isActive": true,
+   }
+ ];  
+  
 
   filterProjects(type: string) {
     this.setActiveButton(type);
@@ -43,7 +44,7 @@ export class ProjectsComponent {
       else{
         project.isActive = false;
       }
-      
+     
     }
   }
 
@@ -58,3 +59,4 @@ export class ProjectsComponent {
     });
   }
 }
+
