@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fabiangurth';
+  burgerMenuActive: boolean;
 
   scroll(anchor: string): void {
-    console.log(anchor);
     let el = document.getElementById(anchor);
     el.scrollIntoView({behavior:"smooth"});
   }
+
 }

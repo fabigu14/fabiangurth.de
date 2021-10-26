@@ -1,5 +1,5 @@
 <app-menu (anchorElement)="scroll($event)"></app-menu>
-<app-header (anchorElement)="scroll($event)"></app-header>
+<app-header (anchorElement)="scroll($event)" [class.margin-top]="burgerMenuActive" (toggle)="burgerMenuActive=$any($event)"></app-header>
 <app-skills id="skills"></app-skills>
 <app-projects id="projects"></app-projects>
 <app-about-me id="about"></app-about-me>

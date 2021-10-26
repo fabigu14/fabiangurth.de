@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +8,12 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
   
   @Output() anchorElement = new EventEmitter<string>();
+  @Input() state: boolean;
   
   constructor() { }
 
   ngOnInit(): void {
+    
   }
   setAnchor(anchor: string) {
     this.anchorElement.emit(anchor);

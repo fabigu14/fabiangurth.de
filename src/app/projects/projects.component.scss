@@ -37,7 +37,7 @@
     transition: all 125ms ease-in-out;
 }
 
-.remove-gap{
+.remove-gap {
     grid-template-columns: auto;
 }
 
@@ -90,6 +90,8 @@
         background-color: white;
         &:hover {
             cursor: pointer;
+            background-color: var(--primary-color);
+            color: white;
         }
     }
 }
@@ -108,7 +110,6 @@
             width: 125px;
         }
     }
-
     .project {
         height: 300px;
         width: 350px;
@@ -124,7 +125,6 @@
             width: 100px;
         }
     }
-
     .project {
         height: 250px;
         width: 300px;
@@ -138,7 +138,6 @@
             width: 90px;
         }
     }
-
     .project {
         height: 230px;
         width: 280px;

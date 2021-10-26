@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output,} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -8,8 +8,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   mobile = false;
+  burgerMenuActive = false;
 
   @Output() anchorElement = new EventEmitter<string>();
+  @Output() toggle: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }
 
@@ -18,6 +20,20 @@ export class MenuComponent implements OnInit {
       this.mobile = true;
     }
   }
+
+  setState(){
+    if(!this.burgerMenuActive){
+      this.burgerMenuActive = true;
+      
+    }
+    else{
+      this.burgerMenuActive = false;
+    }
+    this.toggle.emit(this.burgerMenuActive);
+    
+  }
+
+
 
   setAnchor(anchor: string) {
     this.anchorElement.emit(anchor);
