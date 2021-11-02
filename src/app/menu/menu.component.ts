@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output,} from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output,} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -10,6 +10,7 @@ export class MenuComponent implements OnInit {
   mobile = false;
   burgerMenuActive = false;
 
+  @Input() darkmode = true;
   @Output() anchorElement = new EventEmitter<string>();
   @Output() toggle: EventEmitter<boolean> = new EventEmitter();
 

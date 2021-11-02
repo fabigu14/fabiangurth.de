@@ -1,26 +1,22 @@
 <nav class="menu">
-    <img class="logo" src="assets/img/logo_bold.png" alt="logo">
+    <img [class.invert]="darkmode" class="logo" routerLink='/' src="assets/img/logo_bold.png" alt="logo">
     <div class="links">
-        <a>HOME</a>
-        <a (click)="setAnchor('about')">ABOUT</a>
-        <a (click)="setAnchor('projects')">PORTFOLIO</a>
-        <!-- <img *ngIf="mobile" class="burger-menu" src="assets/img/menu.png" alt="menu"> -->
+        <a routerLink='/'>HOME</a>
+        <a routerLink='/' (click)="setAnchor('about')">ABOUT</a>
+        <a routerLink='/' (click)="setAnchor('projects')">PORTFOLIO</a>
+
     </div>
     <div *ngIf="mobile" class="mobile-menu">
-        <div (click)="setState()" class="burger-menu">
+        <div [class.dark-menu]="darkmode" (click)="setState()" class="burger-menu">
             <span [class.rotate-to-x-1]="burgerMenuActive"></span>
             <span [class.rotate-to-x-2]="burgerMenuActive"></span>
             <span [class.rotate-to-x-3]="burgerMenuActive"></span>
         </div>
-
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
+        
         <div [class.dropdown]="burgerMenuActive" class="mobile-links">
-            <a>HOME</a>
-            <a (click)="setAnchor('about')">ABOUT</a>
-            <a (click)="setAnchor('projects')">PORTFOLIO</a>
+            <a routerLink='/'>HOME</a>
+            <a routerLink='/' (click)="setAnchor('about')">ABOUT</a>
+            <a routerLink='/' (click)="setAnchor('projects')">PORTFOLIO</a>
         </div>
 
     </div>

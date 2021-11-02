@@ -7,6 +7,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(min-width: 1350px){
+        padding: 30px 170px;
+    }
+    @media(min-width: 1600px){
+        padding: 30px 230px;
+    }
+    @media(min-width: 1700px){
+        padding: 30px 300px;
+    }
     a {
         color: white;
         text-decoration: none;
@@ -19,8 +28,21 @@
     }
 }
 
+.dark-menu{
+    span{
+        background-color: black !important;
+    }
+}
+
+.invert{
+    filter: invert(1);
+}
+
 .logo {
     height: 65px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .burger-menu {

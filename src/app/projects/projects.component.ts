@@ -32,10 +32,24 @@ export class ProjectsComponent {
      "isActive": true,
    }
  ];  
+
+ moveUpAnimation = false;
   
 
   filterProjects(type: string) {
+    this.moveUpAnimation = true;
+    
     this.setActiveButton(type);
+
+    setTimeout(() => {
+      this.setProjectState();
+      this.moveUpAnimation = false;
+    }, 225);
+  }
+
+  
+
+  setProjectState(){
     for (let i = 0; i < this.projects.length; i++) {
       const project = this.projects[i];
       if (this.buttons[i + 1]['isActive'] || this.buttons[0]['isActive']) {

@@ -68,10 +68,13 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1090px) {
     .info-section {
         grid-template-columns: auto auto;
     }
+
+}
+@media (max-width: 1024px) {
 
     .about {
         background-color: var(--bg-black);

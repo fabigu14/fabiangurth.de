@@ -6,9 +6,10 @@
         <button data-filter="angular" [class.btn-active]="buttons[1]['isActive']" (click)="filterProjects('angular')">Angular</button>
         <button data-filter="js" [class.btn-active]="buttons[2]['isActive']" (click)="filterProjects('js')">Java Script</button>
     </div>
-    <div class="projects" [class.remove-gap]="buttons[1]['isActive']">
 
-        <div *ngIf="projects[1].isActive" class="project">
+    <div class="overflow-hidden">
+        <div class="projects" [class.move-up]="moveUpAnimation">
+            <div *ngIf="projects[1].isActive" class="project">
             <img src="assets/img/el_pollo_loco.png" alt="img">
             <div class="overlay">
                 <h3>El Pollo Loco</h3>
@@ -40,6 +41,11 @@
                 <button>Try out</button>
             </div>
         </div>
+    
+    </div>
+
+    
+
 
     </div>
 </div>

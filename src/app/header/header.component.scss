@@ -1,6 +1,15 @@
 .header {
     padding: 180px 120px 100px 120px;
     background-color: var(--bg-black);
+    @media(min-width: 1350px){
+        padding: 180px 170px 100px;
+    }
+    @media(min-width: 1600px){
+        padding: 180px 230px 100px;
+    }
+    @media(min-width: 1700px){
+        padding: 180px 300px 100px;
+    }
 }
 
 .intro {

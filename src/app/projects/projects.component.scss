@@ -29,6 +29,8 @@
 }
 
 .projects {
+    overflow: hidden;
+    position: relative;
     margin-top: 50px;
     display: grid;
     grid-gap: 35px;
@@ -37,8 +39,13 @@
     transition: all 125ms ease-in-out;
 }
 
-.remove-gap {
-    grid-template-columns: auto;
+.move-up{
+    transition: all 225ms ease-in-out;
+    transform: translateY(-800px);
+}
+
+.overflow-hidden{
+    overflow: hidden;
 }
 
 .project {

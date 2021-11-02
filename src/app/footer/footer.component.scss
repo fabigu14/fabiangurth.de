@@ -1,5 +1,5 @@
 .footer {
-    padding: 80px 60px;
+    padding: 80px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,11 +13,11 @@
 
     img {
         height: 55px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 700px){
     .footer{
         padding: 40px 60px;
         flex-direction: column-reverse;
