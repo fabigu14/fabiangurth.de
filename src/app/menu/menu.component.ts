@@ -12,7 +12,6 @@ export class MenuComponent implements OnInit {
 
   @Input() darkmode = true;
   @Output() anchorElement = new EventEmitter<string>();
-  @Output() toggle: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }
 
@@ -30,11 +29,8 @@ export class MenuComponent implements OnInit {
     else{
       this.burgerMenuActive = false;
     }
-    this.toggle.emit(this.burgerMenuActive);
     
   }
-
-
 
   setAnchor(anchor: string) {
     this.anchorElement.emit(anchor);
