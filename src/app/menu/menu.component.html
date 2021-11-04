@@ -12,7 +12,7 @@
             <span [class.rotate-to-x-2]="burgerMenuActive"></span>
             <span [class.rotate-to-x-3]="burgerMenuActive"></span>
         </div>
-        
+
         <div [class.dropdown]="burgerMenuActive" [class.dark-menu]="darkmode" class="mobile-links">
             <a routerLink='/' (click)="setState()">HOME</a>
             <a routerLink='/' (click)="setState()" (click)="setAnchor('about')">ABOUT</a>

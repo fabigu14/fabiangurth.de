@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     ContactComponent,
     FooterComponent,
     MainPageComponent,
-    ImprintComponent
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,
