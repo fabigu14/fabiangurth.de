@@ -4,15 +4,15 @@
         <span>Get in touch via the form below, or by emailing 
         <a href="mailto:fabigurth@googlemail.com" class="mail">fabigurth@googlemail.com</a></span>
 
-        <form action="">
+        <form action="https://fabiangurth.de/send_mail.php" method="post">
             <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name">
+            <input name="name" type="text" placeholder="Enter your name">
             <label for="email">Email adress</label>
-            <input type="text" placeholder="Enter your Email adress">
+            <input name="email" type="text" placeholder="Enter your Email adress">
             <label for="message">Message</label>
             <textarea name="message" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
             <div class="btn-box">
-                <button>Send</button>
+                <button type="submit">Send</button>
             </div>
 
         </form>

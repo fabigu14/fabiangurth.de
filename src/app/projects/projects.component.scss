@@ -89,12 +89,13 @@
     span {
         color: black;
     }
-    button {
+    a {
         margin-top: 32px;
         padding: 10px 20px;
         border: 1px solid var(--primary-color);
         color: var(--primary-color);
         background-color: white;
+        text-decoration: none;
         &:hover {
             cursor: pointer;
             background-color: var(--primary-color);
